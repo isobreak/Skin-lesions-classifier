@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link href="{{ url_for('static', path='front/css/home.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', path='front/images/icon2.jpg') }}" type="image/icon type">
+</head>
+<body background="{{ url_for('static', path='front/images/background.jpg') }}">
+    <div class="container">
+        <div class="name">
+            <p>
+                System_name
+            </p>
+        </div>
+        <!-- <div class="greeting">
+            <p>
+                Здравствуйте. Этот сайт посвящен сбору информации по меланоме для обучения интеллектуальной системы поддержки принятия решений.
+                На нем можно найти множество изображений, размеченных врачами,
+                <a href="">скачать датасет</a>, а также
+                <a href="">проверить работу системы без регистрации</a>.
+                Также вы можете <a href="">зарегистрироваться</a> и помочь развитию сайта, пополняя базу данных новыми изображениями и соответствующими диагнозами (требуется подтверждение профпригодности)
+            </p>
+        </div> -->
+        <div class="menu">
+
+            <div class="button" onclick="location.href='/home/diagnosis/'">
+                <img src="{{ url_for('static', path='front/images/reg-auth.png') }}">
+                <p>
+                    Авторизоваться
+                </p>
+            </div>
+            <div class="button" onclick="location.href=''">
+                <img src="{{ url_for('static', path='front/images/download.png') }}">
+                <p>
+                    Загрузить датасет
+                </p>
+            </div>
+            <div class="button" onclick="location.href='/home/analysis/'">
+                <img src="{{ url_for('static', path='front/images/check-sys.png') }}">
+                <p>
+                    Опробовать систему
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

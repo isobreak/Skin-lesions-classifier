@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка изображения</title>
+    <link href="{{ url_for('static', path='front/css/analysis.css') }}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="{{ url_for('static', path='front/images/icon2.jpg') }}" type="image/icon type">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="name">
+                Исходное изображение:
+            </div>
+            <div class="main">
+                {% if rawImage %}
+                <img src="data:image/jpeg;base64,{{ rawImage | safe }}">
+                {% else %}
+                <img src="{{ url_for('static', path='front/images/empty.png') }}">
+                {% endif %}
+            </div>
+            <div class="add">
+                <form method="post" action="#"  enctype="multipart/form-data">
+                    <input type="file" id="files" name="file"><br>
+                    <button type="submit" value="Upload">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="name">
+                Обработанное изображение:
+            </div>
+            <div class="main">
+                {% if resImage %}
+                <img src="data:image/jpeg;base64,{{ resImage | safe }}">
+                {% else %}
+                <img src="{{ url_for('static', path='front/images/empty.png') }}">
+                {% endif %}
+            </div>
+            <div class="info">
+                <div>
+                    Предположительный диагноз:
+                </div>
+                <div class="diagnosis">
+                    <a href="https://ru.wikipedia.org/wiki/Меланома" target="_blank">
+                        {{ predClass | safe }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

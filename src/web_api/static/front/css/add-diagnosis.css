@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgb(216, 218, 233), rgb(206, 217, 231));
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    width: 60%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px #6d68686e;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.form-cont {
+    /* height: 275px; */
+    padding: 5px;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(212, 210, 210, 0.514);
+    /* border: 2px solid red; */
+    box-shadow: 0 0 25px rgb(182, 180, 180);
+}
+
+.form-cont div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type=file] {
+    width: 45%;
+    box-sizing: border-box;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    box-shadow: 0 0 20px rgba(97, 97, 97, 0.726);
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: rgb(80, 179, 218);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #75839c;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10px;
+}
+
+.button-cont {
+    height: 6%;
+    width: 70%;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 35%;
+    max-width: 70%;
+    height: 50px;
+    padding:5px 15px; 
+    background:#ebeaea;
+    border: 1px solid #555;
+    cursor:pointer;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(97, 97, 97, 0.582);
+    transition: all 0.5s;
+}
+
+button.save:hover {
+    background-color: rgb(140, 248, 130);
+    box-shadow: 0 0 20px rgb(82, 192, 97);
+}
+
+button.reset:hover {
+    background-color: rgb(148, 223, 253);
+    box-shadow: 0 0 20px rgb(82, 141, 192);
+}

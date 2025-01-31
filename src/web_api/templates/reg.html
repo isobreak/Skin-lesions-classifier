@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='front/css/reg.css') }}" rel="stylesheet">
+    <title>Натрейдил</title>
+</head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>Создать</button>
+      <p class="message">Уже зарегестрированны?<a href="#">Войти в аккаунт</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="имя"/>
+      <input type="password" placeholder="пароль"/>
+      <button>Войти</button>
+      <p class="message">Не зарегистрированны? <a href="#">Создайте аккаунт</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

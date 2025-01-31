@@ -1,0 +1,60 @@
+
+
+.div3 {
+    height: 100vh;
+  }
+  
+.left {
+    width:50%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+  
+.right {
+    width:50%;
+    height: 100%;
+    display: inline-block;	
+    float: right;
+}
+
+.upper {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    top:0;
+}
+
+.lower {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    bottom:0;
+    text-align:justify;
+}
+
+.image {
+    width:60%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 5%;
+    aspect-ratio: 1/1;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 40%;
+    height: 15%;
+}
+
+.answer-container {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 40%;
+    height: 15%;
+}

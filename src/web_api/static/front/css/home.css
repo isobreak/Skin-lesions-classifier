@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: linear-gradient(to bottom, rgb(216, 218, 233), rgb(206, 217, 231));*/
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 80%;
+    width: 60%;
+    align-self: center;
+    /* border: 2px solid red; */
+    /* display: flex;
+    justify-content: space-around;
+    flex-direction: column; */
+}
+
+.name {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.name p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    align-self: center;
+
+    transition: 1s;
+}
+
+.name p:hover {
+    color: rgb(0, 140, 255);
+    text-shadow: 0 0 25px rgba(0, 140, 255, 0.445);
+}
+
+.greeting {
+    width: 100%;
+    height: 20%;
+
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-indent: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 60%;
+
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    aspect-ratio: 1/1;
+    height: 45%;
+    align-self: center;
+    border-radius: 10px;
+    /* background-color: whitesmoke; */
+    text-indent: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.button a {
+    height: 100%;
+    width: 100%;
+}
+
+.button img {
+    transition: 0.5s;
+}
+
+.button:hover {
+    scale: 1.1;
+    color: rgb(0, 140, 255);
+}
+
+.button img:hover {
+    scale: 1.1;
+}
+
+.button img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.button p {
+    text-indent: 0;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка изображения</title>
+    <link href="{{ url_for('static', path='front/css/add-diagnosis.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', path='front/images/icon2.jpg') }}" type="image/icon type">
+</head>
+<body>
+    <div class="container">
+        <div class="form-cont">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div>
+                    Изображение новообразования
+                </div>
+                <div>
+                    <input name="file" type="file" id="input__file" class="input input__file">
+                </div>
+                <div>
+                    Симптомы пациента
+                </div>
+                <div>
+                    <input type="text" name="symptoms" value="" placeholder="Введите симптомы">
+                </div>
+                <div>
+                    Поставленный диагноз
+                </div>
+                <div>
+                    <input type="text" name="diagnosis" value="" placeholder="Введите диагноз">
+                </div>
+                <div>
+                    Комментарий
+                </div>
+                <div>
+                    <input type="text" name="comment" value="" placeholder="Обоснуйте свое решение">
+                </div>
+            </form>
+        </div>
+        <div class="button-cont">
+            <button type="submit" class="save">
+                Сохранить
+            </button>
+            <button type="button" class="reset">
+                Обновить форму
+            </button>
+        </div>
+    </div>
+</body>
